@@ -24,6 +24,7 @@ It's best if you have bundler installed. If not, install it like this:
     $ gem install bundler
 
 And after that:
+
     $ bundle
 
 You can also install all gems manually, they are listed in Gemfile.
