@@ -19,17 +19,14 @@ Setup
 
 First of all, you need ruby. Can be found in most distro's repositories, but I strongly recommend installing it using [RVM](https://rvm.io).
 
-If you have bundler installed you may simple type:
+It's best if you have bundler installed. If not, install it like this:
 
-    bundle
+    $ gem install bundler
 
-and every needed gem will be installed. If not, you can install bundler
+And after that:
+    $ bundle
 
-    gem install bundler
-
-and do the above or install gems manually
-
-    gem install sinatra librmpd coffee-script thin
+You can also install all gems manually, they are listed in Gemfile.
 
 Default configuration assumes that you are running sin-mpd on the same machine that your mpd server is running. If it's not
 the case, you can set your mpd server address and port number in config/mpd.yml file.
