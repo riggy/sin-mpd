@@ -1,5 +1,7 @@
 require 'sprockets'
 
+# Assets class taken from example posted by Brandur:
+# https://mutelight.org/asset-pipeline
 class Assets < Sinatra::Base
   configure do
     set :assets, (Sprockets::Environment.new { |env|
