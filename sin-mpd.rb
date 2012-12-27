@@ -3,6 +3,11 @@ require 'librmpd'
 require 'yaml'
 require 'coffee-script'
 
+require_relative 'assets'
+
+use Assets
+
+set environment: :production
 
 before do
   config = YAML.load_file "#{Sinatra::Application.root}/config/mpd.yml"
@@ -36,10 +41,10 @@ get '/' do
 end
 
 
-# javascript coffeescript routes
-get '/javascripts/*.js' do |js_file|
-  coffee js_file.to_sym
-end
+## javascript coffeescript routes
+#get '/javascripts/*.js' do |js_file|
+#  coffee js_file.to_sym
+#end
 
 
 
